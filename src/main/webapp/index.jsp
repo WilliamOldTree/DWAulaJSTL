@@ -33,6 +33,27 @@ String today(){
  									<c:out value="${d1}"/>
  								</c:otherwise>
  							</c:choose></h1>
+ 							
+ 							
+ 							
+ <c:set var= "salario" value= "${2000}"/>
+<c:set var= "desconto" value= "${10}"/>
+<c:set var= "new_salario" value= "${0}"/>
+<c:choose>
+    <c:when test="${salario <= 2000}">
+       <c:out value="${desconto * salario}"></c:out>
+    </c:when>
+    <c:when test="${salary > 1000}">
+    
+    </c:when>
+    <c:otherwise>
+
+    </c:otherwise>
+</c:choose>
+
+<c:If test= "${salario > 2000 }">
+	<p><c:out value= "${salario * 10 }"/><p>
+</c:If>							
  		
 </body>
 </html>
